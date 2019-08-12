@@ -1,0 +1,9 @@
+*swp
+*rpmnew
+*retry
+*swo
+sealos
+.idea
+*.tgz
+*.deb
+k8s/.vagrant
