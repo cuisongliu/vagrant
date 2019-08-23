@@ -11,3 +11,8 @@ yum -y groupinstall  基本网页服务器
 yum install socat -y 
 yum install unzip -y 
 yum install ipvsadm -y 
+sed -i "/swap/d" /etc/fstab 
+mount -a 
+swapoff -a
+setenforce 0
+sed -i 's/enforcing/disabled/g' /etc/selinux/config
